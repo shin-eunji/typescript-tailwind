@@ -11,9 +11,10 @@ export const AddTodo = ({
   handleChange,
   handleSubmitTodo
 }: AddTodoProps) => (
-  <form onSubmit={handleSubmitTodo}>
+  <form className={`flex justify-between w-full`} onSubmit={handleSubmitTodo}>
     <input type="text"
            name="task"
+           className={"flex-1 rounded shadow p-2 text-gray-dark mr-2"}
            value={task}
            onChange={handleChange}
     />
